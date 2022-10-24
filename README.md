@@ -1,8 +1,12 @@
 
+Web-testing:
+
+Runs on the following [website](https://www.globalsqa.com/demo-site/).
+
 To run the tests:
 
 1. Run the command in order to create the conda environment:
-`conda create web-testing python=3.10`
+`conda create -n web-testing python=3.10`
 
 2. Run the command to install pip
 `conda install pip`
