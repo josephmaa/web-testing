@@ -1,7 +1,7 @@
 
 Web-testing:
 
-Runs on the following [website](https://www.globalsqa.com/demo-site/).
+Runs on the following [website](http://automationpractice.com/index.php).
 
 ![](imgs/main.png)
 
@@ -14,10 +14,10 @@ To run the tests:
 `conda install pip`
 
 3. Run the command to install the required commands
-`pip3 install -r requirements.txt`
+`pip install -r requirements.txt`
 
 4. Run the command to install the local module to the conda environment.
-`pip3 install -e .`
+`pip install -e .`
 
 5. Run the tests with the command
-`pytest .`
+`python3 -m pytest`
