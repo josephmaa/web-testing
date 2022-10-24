@@ -3,6 +3,8 @@ Web-testing:
 
 Runs on the following [website](https://www.globalsqa.com/demo-site/).
 
+![](imgs/main.png)
+
 To run the tests:
 
 1. Run the command in order to create the conda environment:
