@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.action_chains import ActionChains
 import unittest
 import configparser
 from typing import Optional
@@ -48,6 +49,39 @@ class test_website_chrome(unittest.TestCase):
         element = self.driver.find_element(By.CSS_SELECTOR, "input.search_query")
         element.send_keys("Testing")
         element.submit()
+
+    def test_input_bx_prev_hover(self):
+        a = ActionChains(self.driver)
+        element = self.driver.find_element(By.CSS_SELECTOR, "a.bx-prev")
+        a.move_to_element(element).perform()
+        element.click()
+
+    def test_input_bx_prev(self):
+        element = self.driver.find_element(By.CSS_SELECTOR, "a.bx-prev")
+        element.click()
+
+    def test_input_bx_after_hover(self):
+        a = ActionChains(self.driver)
+        element = self.driver.find_element(By.CSS_SELECTOR, "a.bx-next")
+        a.move_to_element(element).perform()
+        element.click()
+
+    def test_input_bx_after(self):
+        element = self.driver.find_element(By.CSS_SELECTOR, "a.bx-next")
+        element.click()
+
+    def test_cart_click(self):
+        element = self.driver.find_element(
+            By.CSS_SELECTOR, "[title^='View my shopping cart']"
+        )
+        element.click()
+
+    def test_cart_hover(self):
+        a = ActionChains(self.driver)
+        element = self.driver.find_element(
+            By.CSS_SELECTOR, "[title^='View my shopping cart']"
+        )
+        a.move_to_element(element).perform()
 
 
 if __name__ == "__main__":

@@ -5,7 +5,19 @@ Runs on the following [website](http://automationpractice.com/index.php).
 
 ![](imgs/main.png)
 
-Runs on both chrome and firefox browsers to test browser compatibility.
+Runs on both chrome and firefox browsers to test browser compatibility. 
+
+![](imgs/usage.gif)
+
+![](imgs/finished.png)
+
+Hardware Overview:
+
+  Model Name:	MacBook Pro
+  Model Identifier:	MacBookPro16,3
+  Processor Name:	Quad-Core Intel Core i5
+  Processor Speed:	1.4 GHz
+
 
 To run the tests:
 
@@ -13,7 +25,7 @@ To run the tests:
 
 `conda create -n web-testing python=3.10`
 
-2. Run the command to install pip.
+2. Run the command to install pip. 
 
 `conda install pip`
 
