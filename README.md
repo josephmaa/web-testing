@@ -16,5 +16,8 @@ To run the tests:
 3. Run the command to install the required commands
 `pip3 install -r requirements.txt`
 
-4. Run the tests with the command
+4. Run the command to install the local module to the conda environment.
+`pip3 install -e .`
+
+5. Run the tests with the command
 `pytest .`
